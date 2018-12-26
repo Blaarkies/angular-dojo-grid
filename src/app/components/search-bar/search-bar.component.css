@@ -1,0 +1,7 @@
+.input-box {
+    margin: 10px;
+    width: -webkit-fill-available;
+    height: 16px;
+    padding: 4px;
+    border-radius: 10px;
+}

@@ -1,0 +1,51 @@
+.grid-container {
+    height: 400px;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr auto 0.5fr;
+    grid-template-rows: 50px min-content auto;
+    grid-template-areas: "navbar search-bar search-bar search-bar" "navbar action-buttons tabs-bar extra-bar" "navbar list-of-items list-of-items extra-bar";
+    grid-gap: 1em;
+}
+
+.navbar {
+    grid-area: navbar;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.extra-bar {
+    grid-area: extra-bar;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.search-bar {
+    grid-area: search-bar;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.list-of-items {
+    grid-area: list-of-items;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.tabs-bar {
+    grid-area: tabs-bar;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+.action-buttons {
+    grid-area: action-buttons;
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}

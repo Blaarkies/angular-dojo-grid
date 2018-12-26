@@ -1,0 +1,15 @@
+/* Add application styles & imports to this file! */
+
+.clickable-element {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.clickable-element:hover {
+  background-color: chartreuse
+}
+
+.list-item {
+  padding: 4px;
+  border-radius: 10px;
+}

@@ -10,42 +10,24 @@
 
 .navbar {
     grid-area: navbar;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
 .extra-bar {
     grid-area: extra-bar;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
 .search-bar {
     grid-area: search-bar;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
 .list-of-items {
     grid-area: list-of-items;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
 .tabs-bar {
     grid-area: tabs-bar;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }
 
 .action-buttons {
     grid-area: action-buttons;
-    border: 1px solid purple;
-    border-radius: 10px;
-    background-color: whitesmoke;
 }

@@ -2,4 +2,13 @@
     <img src="https://challenge.entelect.co.za/assets/images/entelect-orb-logo.png"
          style="height: 64px">
 </h2>...lets just call it <i>eMail</i>
-<app-css-grid-table></app-css-grid-table>
+
+<button (click)="selectedGrid = 'html'">html</button>
+<button (click)="selectedGrid = 'bootstrap'">bootstrap</button>
+<button (click)="selectedGrid = 'flex'">flex</button>
+<button (click)="selectedGrid = 'css-grid'">css-grid</button>
+
+<app-normal-table *ngIf="selectedGrid === 'html'"></app-normal-table>
+<app-bootstrap-table *ngIf="selectedGrid === 'bootstrap'"></app-bootstrap-table>
+<app-flex-table *ngIf="selectedGrid === 'flex'"></app-flex-table>
+<app-css-grid-table *ngIf="selectedGrid === 'css-grid'"></app-css-grid-table>

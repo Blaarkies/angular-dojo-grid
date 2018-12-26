@@ -11,11 +11,13 @@ import { ActionButtonsComponent } from './components/action-buttons/action-butto
 import { TabsBarComponent } from './components/tabs-bar/tabs-bar.component';
 import { ExtraBarComponent } from './components/extra-bar/extra-bar.component';
 import { ListOfItemsComponent } from './components/list-of-items/list-of-items.component';
+import { BootstrapTableComponent } from './grid/bootstrap-table/bootstrap-table.component';
+import { FlexTableComponent } from './grid/flex-table/flex-table.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule],
     declarations: [AppComponent, NormalTableComponent, CssGridTableComponent, NavbarComponent, SearchBarComponent,
-        ActionButtonsComponent, TabsBarComponent, ExtraBarComponent, ListOfItemsComponent],
+        ActionButtonsComponent, TabsBarComponent, ExtraBarComponent, ListOfItemsComponent, BootstrapTableComponent, FlexTableComponent],
     bootstrap: [AppComponent],
 })
 export class AppModule {

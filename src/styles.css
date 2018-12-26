@@ -13,3 +13,10 @@
   padding: 4px;
   border-radius: 10px;
 }
+
+.outline-component {
+    border: 1px solid purple;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 100%;
+}

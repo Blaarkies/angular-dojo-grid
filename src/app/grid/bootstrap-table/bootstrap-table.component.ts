@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-bootstrap-table',
-  templateUrl: './bootstrap-table.component.html',
-  styleUrls: ['./bootstrap-table.component.css']
+    selector: 'app-bootstrap-table',
+    templateUrl: './bootstrap-table.component.html',
+    styleUrls: ['./bootstrap-table.component.css',
+        './bootstrap-styles.css'],
 })
 export class BootstrapTableComponent implements OnInit {
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
 
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
 import { NormalTableComponent } from './grid/normal-table/normal-table.component';
@@ -15,9 +16,20 @@ import { BootstrapTableComponent } from './grid/bootstrap-table/bootstrap-table.
 import { FlexTableComponent } from './grid/flex-table/flex-table.component';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule],
-    declarations: [AppComponent, NormalTableComponent, CssGridTableComponent, NavbarComponent, SearchBarComponent,
-        ActionButtonsComponent, TabsBarComponent, ExtraBarComponent, ListOfItemsComponent, BootstrapTableComponent, FlexTableComponent],
+    imports: [BrowserModule, FormsModule, FlexLayoutModule],
+    declarations: [
+        AppComponent,
+        NormalTableComponent,
+        CssGridTableComponent,
+        NavbarComponent,
+        SearchBarComponent,
+        ActionButtonsComponent,
+        TabsBarComponent,
+        ExtraBarComponent,
+        ListOfItemsComponent,
+        BootstrapTableComponent,
+        FlexTableComponent,
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {

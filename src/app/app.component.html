@@ -1,3 +1,51 @@
+<div>
+    The usage of grid structures help us place content where it is better suited to the user's experience.
+Since we are not stuck on paper, but have web pages that can dynamically change, it makes sense put content in such
+structures, so that we can just simply change the structure itself in order to modify the page layout.
+
+The following is a mocked out page for some email service. Based on many made up experiments, we have concluded
+that this is the perfect layout...maybe. We duplicated this page using a number of different structures.
+
+HTML native table
+Easily designs general ledger table, but instead of mere numbers, we can add content into those cells.
+Modifications are difficult since it uses attributes on cell, row and column level to achieve this
+
+Bootstrap Grid System
+Divide a container into 12 columns, and put divisible containers inside those.
+Can easily handle different screen sizes (responsiveness) as this is built into the system.
+Moving content to different locations is difficult since location is defined by the classes of many nested divs.
+
+Flex-Layout
+Divide a container into percentiles, in both horizontal and vertical directions.
+Allows responsive design by use of different flex attributes on elements.
+Moving content to different locations is difficult since location is defined by the flex attributes of many nested divs.
+
+CSS Grid Layout
+Setup a grid by drawing lines, label the regions in CSS, label the content in HTML. The content will now appear in the correct location.
+Responsive by use of media queries to completely redefine an alternative grid to use.
+Easily move content location since location is defined only in CSS, while only 1 class is added on content in order to label it.
+
+    >>
+.grid-container (
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    grid-template-rows: 64px auto;
+
+    grid-template-areas:
+        'top-menu-bar   top-menu-bar  top-menu-bar'
+        'friends-list   news-feed     advertisements';
+)
+
+.top-menu-bar (
+    grid-area: top-menu-bar;
+)
+
+.friends-list (
+    grid-area: friends-list;
+)
+    >>
+</div>
+
 <h2>{{name}}
     <img src="https://challenge.entelect.co.za/assets/images/entelect-orb-logo.png"
          style="height: 64px">

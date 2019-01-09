@@ -15,7 +15,7 @@ Divide a container into 12 columns, and put divisible containers inside those.
 Can easily handle different screen sizes (responsiveness) as this is built into the system.
 Moving content to different locations is difficult since location is defined by the classes of many nested divs.
 
-Flex-Layout
+Flexbox Layout
 Divide a container into percentiles, in both horizontal and vertical directions.
 Allows responsive design by use of different flex attributes on elements.
 Moving content to different locations is difficult since location is defined by the flex attributes of many nested divs.
@@ -51,6 +51,11 @@ Easily move content location since location is defined only in CSS, while only 1
          style="height: 64px">
 </h2>...lets just call it <i>eMail</i>
 
+<app-transistion-animated></app-transistion-animated>
+
+<app-keyframe-animated></app-keyframe-animated>
+
+<!--
 <br>
 <button (click)="selectedGrid = 'html'">html</button>
 <button (click)="selectedGrid = 'bootstrap'">bootstrap</button>
@@ -61,3 +66,4 @@ Easily move content location since location is defined only in CSS, while only 1
 <app-bootstrap-table *ngIf="selectedGrid === 'bootstrap'"></app-bootstrap-table>
 <app-flex-table *ngIf="selectedGrid === 'flex'"></app-flex-table>
 <app-css-grid-table *ngIf="selectedGrid === 'css-grid'"></app-css-grid-table>
+-->

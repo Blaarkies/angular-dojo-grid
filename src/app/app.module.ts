@@ -14,6 +14,8 @@ import { ExtraBarComponent } from './components/extra-bar/extra-bar.component';
 import { ListOfItemsComponent } from './components/list-of-items/list-of-items.component';
 import { BootstrapTableComponent } from './grid/bootstrap-table/bootstrap-table.component';
 import { FlexTableComponent } from './grid/flex-table/flex-table.component';
+import { TransistionAnimatedComponent } from './animation/transistion-animated/transistion-animated.component';
+import { KeyframeAnimatedComponent } from './animation/keyframe-animated/keyframe-animated.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, FlexLayoutModule],
@@ -29,6 +31,8 @@ import { FlexTableComponent } from './grid/flex-table/flex-table.component';
         ListOfItemsComponent,
         BootstrapTableComponent,
         FlexTableComponent,
+        TransistionAnimatedComponent,
+        KeyframeAnimatedComponent,
     ],
     bootstrap: [AppComponent],
 })

@@ -1,0 +1,19 @@
+.make-spinner {
+    width: 50px;
+    height: 40px;
+
+    background-color: #007bff;
+    border-bottom: solid black 10px;
+}
+
+.make-spinner:active {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: animatorRotate;
+}
+
+@keyframes animatorRotate {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}

@@ -20,3 +20,10 @@
     background-color: whitesmoke;
     height: 100%;
 }
+
+button {
+    background-color: lime;
+    border: solid 1px gray;
+    padding: 6px;
+    border-radius: 6px;
+}

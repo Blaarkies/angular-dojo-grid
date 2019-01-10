@@ -15,3 +15,13 @@
         background-color: lime;
     }
 }
+
+.enabled-button {
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    transition-property: background-color;
+}
+
+.enabled-button:active {
+    background-color: dimgray;
+}

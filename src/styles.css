@@ -6,17 +6,17 @@ html, body {
 }
 
 .clickable-element {
-  transition: 0.5s;
-  cursor: pointer;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .clickable-element:hover {
-  background-color: chartreuse
+    background-color: chartreuse
 }
 
 .list-item {
-  padding: 4px;
-  border-radius: 10px;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 .outline-component {
@@ -32,3 +32,21 @@ button {
     padding: 6px;
     border-radius: 6px;
 }
+
+.bordered-container {
+    border: 1px solid dimgray;
+    border-radius: 16px;
+    padding: 16px;
+    width: max-content;
+    margin: 16px;
+}
+
+.bordered-container .title-over-border {
+    margin-top: -25px;
+    margin-left: -2px;
+    margin-bottom: 8px;
+    background-color: white;
+    width: max-content;
+    padding: 0 8px 0 8px;
+}
+

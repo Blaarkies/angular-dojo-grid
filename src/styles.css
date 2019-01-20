@@ -27,7 +27,7 @@ html, body {
 }
 
 button {
-    background-color: lime;
+    background-color: #b2e6b8;
     border: solid 1px gray;
     padding: 6px;
     border-radius: 6px;
@@ -37,7 +37,7 @@ button {
     border: 1px solid dimgray;
     border-radius: 16px;
     padding: 16px;
-    width: max-content;
+    width: auto;
     margin: 16px;
 }
 

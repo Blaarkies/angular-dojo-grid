@@ -1,18 +1,21 @@
 .new-button {
-    animation-duration: 2000ms;
+    animation-duration: 4000ms;
     animation-timing-function: ease-in-out;
-    animation-name: animateBackgroundColourChange;
+    animation-name: animate;
 }
 
-@keyframes animateBackgroundColourChange {
+@keyframes animate {
     0% {
         background-color: transparent;
     }
-    50% {
+    40% {
         background-color: red;
     }
+    60% {
+        background-color: transparent;
+    }
     100% {
-        background-color: lime;
+        background-color: #b2e6b8;
     }
 }
 
@@ -23,5 +26,5 @@
 }
 
 .enabled-button:active {
-    background-color: dimgray;
+    background-color: deepskyblue;
 }

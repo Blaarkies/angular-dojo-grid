@@ -1,3 +1,39 @@
+:host {
+    position: relative;
+    overflow: hidden;
+}
+
+:host:before {
+    display: grid;
+
+    place-items: center;
+
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    padding: 0 16px;
+
+    content: 'navbar.component';
+    font-size: 18px;
+
+    transition: ease-in-out 150ms;
+    transition-property: padding, height;
+}
+
+:host:hover:before {
+    padding: 8px 16px;
+    height: 80px;
+}
+
 .navbar-item-padding {
     padding: 1em;
 }

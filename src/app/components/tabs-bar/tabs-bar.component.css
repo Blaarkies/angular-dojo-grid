@@ -3,3 +3,11 @@
     grid-template-columns: repeat(2, 1fr);
     place-items: center;
 }
+
+.tab-item {
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    display: grid;
+    box-sizing: border-box;
+}

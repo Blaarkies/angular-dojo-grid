@@ -16,6 +16,7 @@ import { BootstrapTableComponent } from './grid/bootstrap-table/bootstrap-table.
 import { FlexTableComponent } from './grid/flex-table/flex-table.component';
 import { TransistionAnimatedComponent } from './animation/transistion-animated/transistion-animated.component';
 import { KeyframeAnimatedComponent } from './animation/keyframe-animated/keyframe-animated.component';
+import { AnimatedButtonComponent } from './animation/animated-button/animated-button.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, FlexLayoutModule],
@@ -33,6 +34,7 @@ import { KeyframeAnimatedComponent } from './animation/keyframe-animated/keyfram
         FlexTableComponent,
         TransistionAnimatedComponent,
         KeyframeAnimatedComponent,
+        AnimatedButtonComponent,
     ],
     bootstrap: [AppComponent],
 })

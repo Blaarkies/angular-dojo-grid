@@ -1,69 +1,46 @@
-<div>
-    The usage of grid structures help us place content where it is better suited to the user's experience.
-Since we are not stuck on paper, but have web pages that can dynamically change, it makes sense put content in such
-structures, so that we can just simply change the structure itself in order to modify the page layout.
+<div class="bordered-container">
+    <div class="title-over-border">CSS Animations</div>
 
-The following is a mocked out page for some email service. Based on many made up experiments, we have concluded
-that this is the perfect layout...maybe. We duplicated this page using a number of different structures.
+    <div class="bordered-container button-size">
+        <div class="title-over-border">New Button</div>
+        <app-keyframe-animated></app-keyframe-animated>
+    </div>
 
-HTML native table
-Easily designs general ledger table, but instead of mere numbers, we can add content into those cells.
-Modifications are difficult since it uses attributes on cell, row and column level to achieve this
+    <div class="bordered-container button-size">
+        <div class="title-over-border">Enabled Button</div>
+        <app-transistion-animated></app-transistion-animated>
+    </div>
 
-Bootstrap Grid System
-Divide a container into 12 columns, and put divisible containers inside those.
-Can easily handle different screen sizes (responsiveness) as this is built into the system.
-Moving content to different locations is difficult since location is defined by the classes of many nested divs.
-
-Flexbox Layout
-Divide a container into percentiles, in both horizontal and vertical directions.
-Allows responsive design by use of different flex attributes on elements.
-Moving content to different locations is difficult since location is defined by the flex attributes of many nested divs.
-
-CSS Grid Layout
-Setup a grid by drawing lines, label the regions in CSS, label the content in HTML. The content will now appear in the correct location.
-Responsive by use of media queries to completely redefine an alternative grid to use.
-Easily move content location since location is defined only in CSS, while only 1 class is added on content in order to label it.
-
-    >>
-.grid-container (
-    display: grid;
-    grid-template-columns: 100px 1fr 2fr;
-    grid-template-rows: 64px auto;
-
-    grid-template-areas:
-        'top-menu-bar   top-menu-bar  top-menu-bar'
-        'friends-list   news-feed     advertisements';
-)
-
-.top-menu-bar (
-    grid-area: top-menu-bar;
-)
-
-.friends-list (
-    grid-area: friends-list;
-)
-    >>
+    <div class="bordered-container button-size">
+        <div class="title-over-border">Practical Button</div>
+        <app-animated-button></app-animated-button>
+    </div>
 </div>
 
-<h2>{{name}}
-    <img src="https://challenge.entelect.co.za/assets/images/entelect-orb-logo.png"
-         style="height: 64px">
-</h2>...lets just call it <i>eMail</i>
-
-<app-transistion-animated></app-transistion-animated>
-
-<app-keyframe-animated></app-keyframe-animated>
-
-<!--
 <br>
-<button (click)="selectedGrid = 'html'">html</button>
-<button (click)="selectedGrid = 'bootstrap'">bootstrap</button>
-<button (click)="selectedGrid = 'flex'">flex</button>
-<button (click)="selectedGrid = 'css-grid'">css-grid</button>
 
-<app-normal-table *ngIf="selectedGrid === 'html'"></app-normal-table>
-<app-bootstrap-table *ngIf="selectedGrid === 'bootstrap'"></app-bootstrap-table>
-<app-flex-table *ngIf="selectedGrid === 'flex'"></app-flex-table>
-<app-css-grid-table *ngIf="selectedGrid === 'css-grid'"></app-css-grid-table>
--->
+<div class="bordered-container">
+    <div class="title-over-border">CSS Layouts</div>
+
+    <div class="header">
+        <img class="logo" src="https://retrospectives.entelect.co.za/img/entelect-logo.88a00240.png"/>
+        <h1 class="heading">&nbsp;- Mail </h1>
+    </div>
+
+    <div style="padding: 1em 1em 0;">
+        ...lets just call it <i>eMail</i>
+    </div>
+
+    <br>
+    <button (click)="selectedGrid = 'html'">html</button>
+    <button (click)="selectedGrid = 'bootstrap'">bootstrap</button>
+    <button (click)="selectedGrid = 'flex'">flex</button>
+    <button (click)="selectedGrid = 'css-grid'">css-grid</button>
+    <br>
+
+    <app-normal-table *ngIf="selectedGrid === 'html'"></app-normal-table>
+    <app-bootstrap-table *ngIf="selectedGrid === 'bootstrap'"></app-bootstrap-table>
+    <app-flex-table *ngIf="selectedGrid === 'flex'"></app-flex-table>
+    <app-css-grid-table *ngIf="selectedGrid === 'css-grid'"></app-css-grid-table>
+
+</div>

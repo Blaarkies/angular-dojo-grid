@@ -1,6 +1,4 @@
 .grid-container {
-    height: 400px;
-
     display: grid;
     grid-template-columns: 0.4fr auto 0.8fr 0.5fr;
     grid-template-rows: 50px min-content auto;

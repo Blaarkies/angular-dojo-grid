@@ -1,17 +1,9 @@
-.make-spinner {
-    width: 50px;
-    height: 40px;
-
-    background-color: #007bff;
-    border-bottom: solid black 10px;
-
-    transition-duration: 2000ms;
-    transition-timing-function: linear;
-    transition-property: transform;
-
-    transform: rotate(0deg);
+.enabled-button {
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    transition-property: background-color;
 }
 
-.make-spinner:active {
-    transform: rotate(360deg);
+.enabled-button:active {
+    background-color: deepskyblue;
 }

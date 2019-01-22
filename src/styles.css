@@ -1,17 +1,22 @@
 /* Add application styles & imports to this file! */
 
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .clickable-element {
-  transition: 0.5s;
-  cursor: pointer;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .clickable-element:hover {
-  background-color: chartreuse
+    background-color: chartreuse
 }
 
 .list-item {
-  padding: 4px;
-  border-radius: 10px;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 .outline-component {
@@ -19,4 +24,32 @@
     border-radius: 10px;
     background-color: whitesmoke;
     height: 100%;
+}
+
+button {
+    background-color: #b2e6b8;
+    border: solid 1px gray;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.bordered-container {
+    border: 1px solid dimgray;
+    border-radius: 16px;
+    padding: 16px;
+    width: auto;
+    margin: 16px;
+}
+
+.bordered-container .title-over-border {
+    margin-top: -25px;
+    margin-left: -2px;
+    margin-bottom: 8px;
+    background-color: white;
+    width: max-content;
+    padding: 0 8px 0 8px;
+}
+
+.button-size {
+    width: 200px;
 }

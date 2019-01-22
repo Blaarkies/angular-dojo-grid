@@ -1,4 +1,5 @@
-.table-width {
+.table {
+    height: 100%;
     width: 100%;
     margin: -16px;
 }
@@ -17,4 +18,13 @@
 
 .extra-bar-width {
     width: 30%;
+}
+
+table * {
+    box-sizing: border-box;
+}
+
+.block-height-100 {
+    display: block;
+    height: 100%;
 }

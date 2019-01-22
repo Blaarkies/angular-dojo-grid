@@ -1,37 +1,19 @@
 .grid-container {
-    display: grid;
-    grid-template-columns: 0.4fr auto 0.8fr 0.5fr;
-    grid-template-rows: 50px min-content auto;
-    grid-gap: 1em;
+    /*Add display: grid*/
 
-    /*@formatter:off*/
-    grid-template-areas:
-            'navbar search-bar      search-bar      search-bar'
-            'navbar action-buttons  tabs-bar        extra-bar'
-            'navbar list-of-items   list-of-items   extra-bar';
-    /*@formatter:on*/
+    /*Add grid-template-columns*/
+    /*Add grid-template-rows*/
+
+    /*Add grid-template-areas
+    The value here should just be 3 quoted strings, no commas in between*/
+
+
+    /*Remember to add grid-gap*/
 }
 
+/*This will label one of the components
+It will match up with a name inside grid-template-areas*/
 .navbar {
     grid-area: navbar;
 }
-
-.extra-bar {
-    grid-area: extra-bar;
-}
-
-.search-bar {
-    grid-area: search-bar;
-}
-
-.list-of-items {
-    grid-area: list-of-items;
-}
-
-.tabs-bar {
-    grid-area: tabs-bar;
-}
-
-.action-buttons {
-    grid-area: action-buttons;
-}
+/*Now you create the other labels*/

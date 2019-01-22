@@ -1,9 +1,7 @@
 .enabled-button {
-    transition-duration: 500ms;
-    transition-timing-function: ease-out;
-    transition-property: background-color;
+    /*Add transition properties here*/
 }
 
-.enabled-button:hover {
-    background-color: deepskyblue;
+.enabled-button:active {
+    /*Add end-state of property here*/
 }

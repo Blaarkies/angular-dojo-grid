@@ -1,20 +1,11 @@
 .new-button {
-    animation-duration: 4000ms;
-    animation-timing-function: ease-in-out;
-    animation-name: animateBackgroundColourChange;
+    /*Add animation rules and name here*/
 }
 
 @keyframes animateBackgroundColourChange {
     0% {
         background-color: transparent;
     }
-    40% {
-        background-color: red;
-    }
-    60% {
-        background-color: transparent;
-    }
-    100% {
-        background-color: #b2e6b8;
-    }
+    /*Add more animation tracks here
+    Any percentage numbers up to 100 can be used*/
 }

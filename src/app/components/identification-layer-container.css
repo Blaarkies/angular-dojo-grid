@@ -1,6 +1,7 @@
 :host {
     position: relative;
-    overflow: hidden;
+    display: grid;
+    height: 100%;
 }
 
 :host:before {
@@ -11,6 +12,7 @@
     position: absolute;
     height: 0;
     width: max-content;
+    min-width: 100%;
     top: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.6);
@@ -19,7 +21,7 @@
 
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    padding: 0 16px;
+    padding: 0 8px;
     font-size: 18px;
 
     transition: ease-in-out 150ms;
@@ -28,5 +30,5 @@
 
 :host:hover:before {
     padding: 8px 16px;
-    height: 80px;
+    height: 48px;
 }

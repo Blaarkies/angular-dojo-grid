@@ -8,12 +8,12 @@
 
     <div class="bordered-container button-size">
         <div class="title-over-border">Enabled Button</div>
-        <app-transistion-animated></app-transistion-animated>
+        <app-transition-animated></app-transition-animated>
     </div>
 
     <div class="bordered-container button-size">
         <div class="title-over-border">Practical Button</div>
-        <app-animated-button></app-animated-button>
+        <app-practical-button></app-practical-button>
     </div>
 </div>
 
@@ -27,15 +27,26 @@
         <h1 class="heading">&nbsp;- Mail </h1>
     </div>
 
-    <div style="padding: 1em 1em 0;">
+    <p style="padding: 1em 1em 0;">
         ...lets just call it <i>eMail</i>
-    </div>
+    </p>
 
     <br>
-    <button (click)="selectedGrid = 'html'">html</button>
-    <button (click)="selectedGrid = 'bootstrap'">bootstrap</button>
-    <button (click)="selectedGrid = 'flex'">flex</button>
-    <button (click)="selectedGrid = 'css-grid'">css-grid</button>
+    <button (click)="selectedGrid = 'html'"
+            [disabled]="selectedGrid == 'html'">html
+    </button>
+
+    <button (click)="selectedGrid = 'bootstrap'"
+            [disabled]="selectedGrid == 'bootstrap'">bootstrap
+    </button>
+
+    <button (click)="selectedGrid = 'flex'"
+            [disabled]="selectedGrid == 'flex'">flex
+    </button>
+
+    <button (click)="selectedGrid = 'css-grid'"
+            [disabled]="selectedGrid == 'css-grid'">css-grid
+    </button>
     <br>
 
     <app-normal-table *ngIf="selectedGrid === 'html'"></app-normal-table>

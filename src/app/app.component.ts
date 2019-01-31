@@ -7,6 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-    name = 'Entelect Mail';
     selectedGrid = 'html';
 }

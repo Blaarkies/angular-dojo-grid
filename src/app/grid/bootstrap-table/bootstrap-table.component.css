@@ -1,4 +1,4 @@
-/*Override the max-width limitaion*/
+/*Override the max-width limitation*/
 .container {
     max-width: 100% !important;
 }

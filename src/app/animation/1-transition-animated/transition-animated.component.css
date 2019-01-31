@@ -4,6 +4,6 @@
     transition-property: background-color;
 }
 
-.enabled-button:active {
+.enabled-button:hover {
     background-color: deepskyblue;
 }

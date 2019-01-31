@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
-    styleUrls: ['./navbar.component.css'],
+    styleUrls: ['./navbar.component.css', '../identification-layer-container.css'],
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
     public list = [
         'Inbox',
@@ -16,11 +16,5 @@ export class NavbarComponent implements OnInit {
         'Draft',
         'Spam',
     ];
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

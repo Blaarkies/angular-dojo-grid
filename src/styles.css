@@ -33,6 +33,10 @@ button {
     border-radius: 6px;
 }
 
+button:focus {
+    outline: none;
+}
+
 .bordered-container {
     border: 1px solid dimgray;
     border-radius: 16px;

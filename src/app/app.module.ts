@@ -14,9 +14,9 @@ import { ExtraBarComponent } from './components/extra-bar/extra-bar.component';
 import { ListOfItemsComponent } from './components/list-of-items/list-of-items.component';
 import { BootstrapTableComponent } from './grid/bootstrap-table/bootstrap-table.component';
 import { FlexTableComponent } from './grid/flex-table/flex-table.component';
-import { TransistionAnimatedComponent } from './animation/transistion-animated/transistion-animated.component';
-import { KeyframeAnimatedComponent } from './animation/keyframe-animated/keyframe-animated.component';
-import { AnimatedButtonComponent } from './animation/animated-button/animated-button.component';
+import { TransitionAnimatedComponent } from './animation/1-transition-animated/transition-animated.component';
+import { KeyframeAnimatedComponent } from './animation/2-keyframe-animated/keyframe-animated.component';
+import { PracticalButtonComponent } from './animation/3-practical-button/practical-button.component';
 
 @NgModule({
     imports: [BrowserModule, FormsModule, FlexLayoutModule],
@@ -32,9 +32,9 @@ import { AnimatedButtonComponent } from './animation/animated-button/animated-bu
         ListOfItemsComponent,
         BootstrapTableComponent,
         FlexTableComponent,
-        TransistionAnimatedComponent,
+        TransitionAnimatedComponent,
         KeyframeAnimatedComponent,
-        AnimatedButtonComponent,
+        PracticalButtonComponent,
     ],
     bootstrap: [AppComponent],
 })

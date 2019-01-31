@@ -31,6 +31,12 @@ button {
     border: solid 1px gray;
     padding: 6px;
     border-radius: 6px;
+    cursor: pointer;
+}
+
+button:active,
+button:hover {
+    outline: none;
 }
 
 button:focus {

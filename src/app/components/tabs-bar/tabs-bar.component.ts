@@ -1,21 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-tabs-bar',
     templateUrl: './tabs-bar.component.html',
-    styleUrls: ['./tabs-bar.component.css'],
+    styleUrls: ['./tabs-bar.component.css', '../identification-layer-container.css'],
 })
-export class TabsBarComponent implements OnInit {
+export class TabsBarComponent {
 
     public list = [
         'Complete',
         'Not Complete',
     ];
 
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

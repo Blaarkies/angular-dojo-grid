@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-search-bar',
     templateUrl: './search-bar.component.html',
-    styleUrls: ['./search-bar.component.css'],
+    styleUrls: ['./search-bar.component.css', '../identification-layer-container.css'],
 })
-export class SearchBarComponent implements OnInit {
+export class SearchBarComponent {
 
     public list = [
         'Inbox',
@@ -17,10 +17,5 @@ export class SearchBarComponent implements OnInit {
         'Spam',
     ];
 
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

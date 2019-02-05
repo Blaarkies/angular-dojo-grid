@@ -1,3 +1,7 @@
+:host:before {
+    content: 'search-bar.component';
+}
+
 .input-box {
     margin: 10px;
     width: -webkit-fill-available;

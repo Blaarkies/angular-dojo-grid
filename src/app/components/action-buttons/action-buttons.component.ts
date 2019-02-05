@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-action-buttons',
     templateUrl: './action-buttons.component.html',
-    styleUrls: ['./action-buttons.component.css'],
+    styleUrls: ['./action-buttons.component.css', '../identification-layer-container.css'],
 })
-export class ActionButtonsComponent implements OnInit {
+export class ActionButtonsComponent {
 
     public list = [
         'face',
@@ -15,18 +15,5 @@ export class ActionButtonsComponent implements OnInit {
         'android',
         'build',
     ];
-
-    //   'read',
-    // 'unread',
-    // 'forget',
-    // 'remember',
-    // 'delete',
-    // 'undelete',
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-list-of-items',
     templateUrl: './list-of-items.component.html',
-    styleUrls: ['./list-of-items.component.css'],
+    styleUrls: ['./list-of-items.component.css', '../identification-layer-container.css'],
 })
-export class ListOfItemsComponent implements OnInit {
+export class ListOfItemsComponent {
 
     public list = [
         '5 Spice Onion Soup.',
@@ -17,11 +17,5 @@ export class ListOfItemsComponent implements OnInit {
         'Minestrone Surprise.',
         'Oyster and Clam Chowder.',
     ];
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
 }

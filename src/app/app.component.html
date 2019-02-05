@@ -1,3 +1,17 @@
+<img src="../assets/shopping_cart_background.png" style="height: 100vh"
+     (click)="itemClicked = true"/>
+<div class="wrap" [class.wrap-on]="itemClicked">
+    <img src="../assets/thing%20to%20buy.jpg" class="el"/>
+</div>
+
+<div class="fake-button" [class.fake-button-on]="itemClicked">
+    Check out
+</div>
+
+<div class="add-to-cart-button" (click)="itemClicked = true">
+    Add to cart
+</div>
+
 <div class="bordered-container">
     <div class="title-over-border">CSS Animations</div>
 

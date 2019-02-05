@@ -16,5 +16,75 @@ p, h1 {
 }
 
 .header .heading {
-    color:white;
+    color: white;
+}
+
+
+
+.wrap {
+    position: absolute;
+    top: 464px;
+    transition: top ease-in-out 1000ms;
+}
+
+.el {
+    position: relative;
+    transition: left cubic-bezier(0.36, 0.21, 0.15, 1) 1000ms;
+    left: 262px;
+}
+
+.wrap-on {
+    top: 201px;
+}
+
+.wrap-on .el {
+    left: 1142px;
+
+    box-shadow: 10px 10px 8px #888888;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.fake-button {
+    position: absolute;
+    top: 114px;
+    left: 1333px;
+    border: 1px solid dimgray;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: x-large;
+
+    transition: ease-in-out 1000ms;
+    transition-delay: 1000ms;
+}
+
+.fake-button:hover {
+    background-color: #990033;
+    cursor: pointer;
+}
+
+.fake-button-on {
+    left: 1133px;
+}
+
+.add-to-cart-button {
+    position: absolute;
+    top: 654px;
+    left: 224px;
+    border: 1px solid dimgray;
+    background-color: #990033;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: x-large;
+
+    transition: ease-in-out 300ms;
+}
+
+.add-to-cart-button:hover {
+    background-color: #da5d5d;
+    cursor: pointer;
 }

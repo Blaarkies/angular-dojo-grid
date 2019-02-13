@@ -5,6 +5,27 @@ html, body {
     padding: 0;
 }
 
+p, h1 {
+    font-family: Lato, sans-serif;
+}
+
+.header {
+    background-color: #051d37;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 1fr;
+    place-items: center start;
+    padding: 0 16px;
+}
+
+.header .logo {
+    height: 64px;
+}
+
+.header .heading {
+    color:white;
+}
+
 .clickable-element {
     transition: 0.5s;
     cursor: pointer;
@@ -63,3 +84,4 @@ button:focus {
 .button-size {
     width: 200px;
 }
+

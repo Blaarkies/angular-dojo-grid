@@ -1,20 +1,24 @@
-p, h1 {
-    font-family: Lato, sans-serif;
+.links-container {
+    padding: 16px 8px;
 }
 
-.header {
-    background-color: #051d37;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto 1fr;
-    place-items: center start;
-    padding: 0 16px;
-}
-
-.header .logo {
+.links-container a:visited,
+.links-container a:active,
+.links-container a:hover,
+.links-container a {
+    text-decoration: none;
+    color: #FFF;
     height: 64px;
+    padding: 8px 16px;
+    margin: 0 8px;
+    background-color: red;
+    border-radius: 5px;
 }
 
-.header .heading {
-    color:white;
+.links-container a:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.links-container a.active {
+    background-color: green;
 }

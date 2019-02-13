@@ -1,0 +1,16 @@
+.grid-container {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 50px);
+}
+
+.center-content {
+    place-items: center;
+}
+
+.title {
+    display: block;
+    width: 128px;
+    font-size: 64px;
+    border: 1px solid;
+}

@@ -1,37 +1,37 @@
-<div fxLayout="row" fxLayoutAlign=" none" fxFlex fxFill fxLayoutGap="1em" class="stretch-flex-table">
+<div fxLayout="row" fxLayoutAlign=" none" fxFlex fxFill fxLayoutGap="1em" class="">
 
-    <div fxLayout="row" fxLayoutAlign="stretch" fxFlex="22" fxFill>
-        <app-navbar fxFlex></app-navbar>
+    <div fxLayout="row" fxLayoutAlign="stretch" fxFlex="22">
+        <app-navbar fxFlex="auto"></app-navbar>
     </div>
 
-    <div fxLayout="column" fxLayoutAlign="stretch" fxFlex fxFill fxLayoutGap="1em" >
+    <div fxLayout="column" fxLayoutAlign="stretch" fxFlex fxFill fxLayoutGap="1em">
 
-        <div fxLayoutAlign=" none">
-            <app-search-bar fxFlex></app-search-bar>
+        <div fxLayoutAlign="none">
+            <app-search-bar fxFlex="auto"></app-search-bar>
         </div>
 
-        <div fxLayout="row" fxLayoutAlign=" none" fxFlex fxLayoutGap="1em" >
+        <div fxLayout="row" fxLayoutAlign=" none" fxFlex="auto" fxLayoutGap="1em">
 
-            <div fxLayout="column" fxLayoutAlign="stretch" fxFlex fxLayoutGap="1em" >
+            <div fxLayout="column" fxLayoutAlign="stretch" fxFlex fxLayoutGap="1em">
 
-                <div fxLayout="row" fxLayoutAlign="stretch" fxLayoutGap="1em" >
+                <div fxFlex="64px" fxLayout="row" fxLayoutAlign="stretch" fxLayoutGap="1em">
 
-                    <div>
+                    <div fxFlex="auto">
                         <app-action-buttons></app-action-buttons>
                     </div>
 
-                    <div fxFlex>
+                    <div fxFlex="auto">
                         <app-tabs-bar></app-tabs-bar>
                     </div>
                 </div>
 
-                <div fxFlex>
+                <div fxFlex="auto">
                     <app-list-of-items></app-list-of-items>
                 </div>
             </div>
 
             <div fxLayout="row" fxLayoutAlign=" none" fxFlex="35">
-                <app-extra-bar fxFlex></app-extra-bar>
+                <app-extra-bar fxFlex="auto"></app-extra-bar>
             </div>
         </div>
     </div>

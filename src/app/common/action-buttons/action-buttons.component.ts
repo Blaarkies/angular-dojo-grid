@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'app-action-buttons',
     templateUrl: './action-buttons.component.html',
-    styleUrls: ['./action-buttons.component.css', '../identification-layer-container.css'],
+    styleUrls: ['./action-buttons.component.scss', '../identification-layer-container.css'],
 })
 export class ActionButtonsComponent {
+
+    @Input() responsive = false;
 
     public list = [
         'face',

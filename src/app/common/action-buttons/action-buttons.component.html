@@ -1,4 +1,4 @@
-<div class="grid-container outline-component" title="Action buttons">
+<div class="grid-container outline-component" title="Action buttons" [ngClass]="{ 'responsive': responsive }">
     <div class="clickable-element list-item material-icons"
          *ngFor="let item of list">{{item}}
     </div>

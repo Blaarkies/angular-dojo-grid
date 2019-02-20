@@ -38,18 +38,15 @@
   }
 }
 
+// Media query that targets up to the predefined xs screen size
+// Change the grid layout so that everything fits nicely in the screen from 600px down
 @media (max-width: $screen-xs-max) {
   .grid-container {
-    grid-template-columns: 64px auto;
-    grid-template-rows: 50px 70px auto auto auto;
+    // Change grid-template-columns
+    // Change grid-template-rows
 
     /*@formatter:off*/
-    grid-template-areas:
-            'search-bar     search-bar'
-            'navbar         navbar'
-            'action-buttons tabs-bar'
-            'action-buttons list-of-items'
-            'extra-bar      extra-bar';
+    // Change grid-template-areas
     /*@formatter:on*/
   }
 }

@@ -1,13 +1,15 @@
 @import "../../../styles/variables";
 
 :host:before {
-    content: 'action-buttons.component';
+    content: 'search-bar.component';
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+.input-box {
+    margin: 10px;
+    width: -webkit-fill-available;
+    height: 16px;
+    padding: 4px;
+    border-radius: 10px;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -16,6 +18,6 @@
     .responsive.outline-component {
     }
 
-    .responsive.outline-component .list-item {
+    .responsive.outline-component input {
     }
 }

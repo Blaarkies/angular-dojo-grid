@@ -1,19 +1,16 @@
 @import "../../../styles/variables";
 
 :host:before {
-    content: 'action-buttons.component';
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+    content: 'list-of-items.component';
 }
 
 @media (max-width: $screen-xs-max) {
     // Bonus: play around with this component's styling on mobile screens to get even more different layouts
 
     .responsive.outline-component {
+    }
+
+    .responsive.outline-component h4 {
     }
 
     .responsive.outline-component .list-item {

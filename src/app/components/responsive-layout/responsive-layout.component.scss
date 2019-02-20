@@ -49,8 +49,8 @@ $screen-xl-max: 5000px;
 
 @media (max-width: $screen-xs-max) {
   .grid-container {
-    grid-template-columns: 64PX auto;
-    grid-template-rows: 50px 70px auto auto auto auto;
+    grid-template-columns: 64px auto;
+    grid-template-rows: 50px 70px auto auto auto;
 
     /*@formatter:off*/
     grid-template-areas:

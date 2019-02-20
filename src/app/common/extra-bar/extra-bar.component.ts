@@ -9,6 +9,20 @@ export class ExtraBarComponent {
 
     @Input() responsive = false;
 
-    public list = Array.from(Array(10).keys());
+    public list = [
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+        'Lorem Ipsum',
+    ];
 
 }

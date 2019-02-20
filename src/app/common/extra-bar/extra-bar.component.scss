@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+:host:before {
+    content: 'extra-bar.component';
+}
+
+@media (max-width: $screen-xs-max) {
+    .responsive {
+        &.outline-component {
+            display: grid;
+            grid-template-columns: 1fr;
+            max-width: 100%;
+            height: 80px;
+            overflow-y: auto;
+
+            .list-item {
+                display: grid;
+                place-content: center;
+            }
+        }
+    }
+}

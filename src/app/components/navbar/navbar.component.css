@@ -1,7 +1,0 @@
-:host:before {
-    content: 'navbar.component';
-}
-
-.navbar-item-padding {
-    padding: 1em;
-}

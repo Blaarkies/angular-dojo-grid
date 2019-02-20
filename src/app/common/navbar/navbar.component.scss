@@ -1,0 +1,26 @@
+@import "../../../styles/variables";
+
+:host:before {
+    content: 'navbar.component';
+}
+
+@media (max-width: $screen-xs-max) {
+    .responsive {
+        &.outline-component {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 100px;
+            max-width: 100%;
+            overflow-x: auto;
+
+            .list-item {
+                display: grid;
+                place-content: center;
+            }
+        }
+    }
+}
+
+.navbar-item-padding {
+    padding: 1em;
+}

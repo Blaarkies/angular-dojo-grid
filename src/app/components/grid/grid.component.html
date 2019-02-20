@@ -1,0 +1,36 @@
+<div class="bordered-container">
+  <div class="title-over-border">CSS Layouts</div>
+
+  <div class="header">
+    <img class="logo" src="https://retrospectives.entelect.co.za/img/entelect-logo.88a00240.png"/>
+    <h1 class="heading">&nbsp;- Mail </h1>
+  </div>
+
+  <p style="padding: 1em 1em 0;">
+    ...lets just call it <i>eMail</i>
+  </p>
+
+  <br>
+  <button (click)="selectedGrid = 'html'"
+          [disabled]="selectedGrid == 'html'">html
+  </button>
+
+  <button (click)="selectedGrid = 'bootstrap'"
+          [disabled]="selectedGrid == 'bootstrap'">bootstrap
+  </button>
+
+  <button (click)="selectedGrid = 'flex'"
+          [disabled]="selectedGrid == 'flex'">flex
+  </button>
+
+  <button (click)="selectedGrid = 'css-grid'"
+          [disabled]="selectedGrid == 'css-grid'">css-grid
+  </button>
+  <br>
+
+  <app-normal-table *ngIf="selectedGrid === 'html'"></app-normal-table>
+  <app-bootstrap-table *ngIf="selectedGrid === 'bootstrap'"></app-bootstrap-table>
+  <app-flex-table *ngIf="selectedGrid === 'flex'"></app-flex-table>
+  <app-css-grid-table *ngIf="selectedGrid === 'css-grid'"></app-css-grid-table>
+
+</div>
